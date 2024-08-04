@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+.main {
+    background-image: url(download.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    min-width: 400px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background: rgb(49, 12, 200);
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#pass-box {
+    width: 100%;
+    display: block;
+    background-color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+    gap: 10px;
+    align-items: center;
+}
+
+.row img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    
+}
+
+#copyStatus {
+    font-size: 15px;
+    font-style: italic;
+}
+
+label {
+    user-select: none;
+    margin-bottom: 5px;
+}
+
+#btn {
+    width: 100%;
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        min-width: 100%;
+        padding: 15px;
+    }
+
+    #pass-box {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    #btn {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .row {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 10px;
+    }
+
+    #pass-box {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .row {
+        font-size: 14px;
+    }
+}
